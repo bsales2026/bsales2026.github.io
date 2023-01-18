@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    margin: auto;
+}
+
+img{
+ max-width: 100%;
+ display: block;
+ border-radius: 5%;
+
+}
+ul{
+    list-style-type: none;
+    overflow: hidden; 
+    margin: auto;
+    text-align: right;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    margin: auto;
+}
+nav{
+    background-color: rgb(192, 192, 192, 0.7);
+    font-family: "Press Start 2P","Allura";
+    font-size: 150%; 
+    position: sticky;
+    top: 0px;
+    padding-top: 1%;
+}
+
+nav h2{
+    text-align: center;
+    font-family: "Press Start 2P", "Roboto Slab";
+}
+
+section .column{
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+
+}
+section .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a:hover{
+    background-color: gray;
+    padding: 10%;
+}
+h2{
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+h2 span{
+    background-color: white;
+}
+div{
+    margin: auto;
+    display: block;
+    width: 100%;
+    background-color: white;
+    padding: 2%;
+    border-radius: 10%;
+}
+p{
+    font-size: 1em;
+    font-family: "Roboto Slab";
+}
+@media (max-width: 600px) {
+   section .column{
+    width: 100%;
+   } 
+   body{
+    font-size: 80%;
+   }
+}
+footer{
+text-align: left;
+word-wrap: break-word;
+}
